@@ -1,0 +1,30 @@
+@import url('./styles/global.css');
+
+.app_container {
+  /* === CONFIGURAÇÕES BÁSICAS === */
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  /* === COR DE FUNDO === */
+  background-color: var(--white_tree);
+
+  /* === MOLDURA PRETA === */
+  border: 6px solid var(--black); /* ajusta a espessura como quiser */
+  border-radius: 0; /* pode por 12px se quiser cantos arredondados */
+
+  /* === GARANTIR ESPAÇAMENTO INTERNO === */
+  padding: 20px;
+
+  /* === EVITA QUE O CONTEÚDO ULTRAPASSE AS BORDAS === */
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  /* === AJUSTA O TAMANHO NA TELA === */
+  min-height: 100vh;
+
+  /* === CENTRALIZA O CONTEÚDO EM ALGUNS CASOS === */
+  display: flex;
+  flex-direction: column;
+}
+
