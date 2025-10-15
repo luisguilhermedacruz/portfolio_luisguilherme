@@ -1,14 +1,15 @@
-// App.jsx
 import './App.css';
 import './styles/global.css';
 import Home from '../src/components/Home';
+import Navbar from '../src/components/Navbar';
 
 
 function App() {
   return (
-    <div className="app_container">
-      <Home/>
-    </div>
+    <div className="app_container">     
+        <Navbar/>
+        <Home/>
+      </div>
   );
 }
 

@@ -1,0 +1,12 @@
+@import url(../styles//global.css);
+
+.buttons_nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.buttons_nav svg {
+    color: var(--black);
+    font-size: 3rem;
+}
+
