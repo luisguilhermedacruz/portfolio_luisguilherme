@@ -1,0 +1,12 @@
+{
+  "navbar": {
+    "subtitle": "BACK-END DEVELOPER"
+  },
+  "nav": {
+    "home": "HOME",
+    "about": "ABOUT",
+    "projects": "PROJECTS",
+    "skills": "SKILLS",
+    "contact": "CONTACT"
+  }
+}

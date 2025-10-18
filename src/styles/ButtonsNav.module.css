@@ -4,7 +4,7 @@
 .buttons_nav {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 15px;
   color: var(--black);
   font-family: var(--font_secondary);
 }
@@ -46,6 +46,8 @@
 .active {
   color: var(--black);
   font-weight: 700;
+  font-weight: 1000;
+  font-size: 2rem;
 }
 
 
