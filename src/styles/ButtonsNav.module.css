@@ -16,10 +16,6 @@
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.buttons_nav svg:hover {
-  transform: scale(1.1);
-  opacity: 0.8;
-}
 
 
 .change_language_container {

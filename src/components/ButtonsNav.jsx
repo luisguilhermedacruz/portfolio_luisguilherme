@@ -1,6 +1,8 @@
+import React, {useState} from "react";
 import { useTranslation } from "react-i18next";
 import { TiThMenu } from "react-icons/ti";
 import style from "../styles/ButtonsNav.module.css";
+import Mobile_Menu from "./Mobile_Menu";
 
 const ChangeLanguage = () => {
   const { i18n } = useTranslation();
@@ -34,11 +36,23 @@ const ChangeLanguage = () => {
 };
 
 const ButtonsNav = () => {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () =>{
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+
   return (
+    <>
     <div className={style.buttons_nav}>
       <ChangeLanguage />
-      <TiThMenu />      
+      <TiThMenu onClick={toggleMenu}/>      
     </div>
+
+    <Mobile_Menu isMenuOpen={isMenuOpen}/>
+    </>
   );
 };
 
