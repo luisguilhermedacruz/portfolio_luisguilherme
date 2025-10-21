@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next"; // <-- 1. Importar o hook useTranslation
+import { useTranslation } from "react-i18next"; 
 import style from '../styles/navbar.module.css';
 import ButtonsNav from './ButtonsNav';
 import Navlinks from './Navlinks';
