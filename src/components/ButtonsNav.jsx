@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { TiThMenu } from "react-icons/ti";
 import style from "../styles/ButtonsNav.module.css";
@@ -6,7 +6,7 @@ import Mobile_Menu from "./Mobile_Menu";
 
 const ChangeLanguage = () => {
   const { i18n } = useTranslation();
-  const activeLanguage = i18n.language; 
+  const activeLanguage = i18n.language;
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -18,7 +18,7 @@ const ChangeLanguage = () => {
         className={`${style.language_option} ${
           activeLanguage === "pt" ? style.active : ""
         }`}
-          onClick={() => changeLanguage("pt")}
+        onClick={() => changeLanguage("pt")}
       >
         PT
       </span>
@@ -36,22 +36,21 @@ const ChangeLanguage = () => {
 };
 
 const ButtonsNav = () => {
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const toggleMenu = () =>{
+  const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-
   return (
     <>
-    <div className={style.buttons_nav}>
-      <ChangeLanguage />
-      <TiThMenu onClick={toggleMenu}/>      
-    </div>
+      <div className={style.buttons_nav}>
+        <ChangeLanguage />
+        <TiThMenu onClick={toggleMenu} className={style.menu_icon} />
+      </div>
 
-    <Mobile_Menu isMenuOpen={isMenuOpen}/>
+      {/* Passando as props */}
+      <Mobile_Menu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
     </>
   );
 };
